@@ -1,0 +1,7 @@
+#ignorando imagenes
+*.jpg
+
+#ignorando logs
+*.log
+src/
+files/
