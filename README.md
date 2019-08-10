@@ -10,3 +10,4 @@ que serás
 Aun no fue implementada la usabilidad del sitio.
 Sin embargo, se tiene previsto hacerlo en un futuro.
 
+Cambios como colaborador -> Manuel <3

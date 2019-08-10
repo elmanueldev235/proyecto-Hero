@@ -8,6 +8,11 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+button{
+  border: none;
+  background-color: inherit;
+}
+
 .page-hero{
   min-height: 100vh;
   color: #fff;
@@ -35,11 +40,63 @@ body{
 .page-title{
   font-size: 54px;
 }
-
+.text-center{
+  text-align: center;
+}
 .page-subtitle{
   font-weight: normal;
 }
 
 .mb{
   margin-bottom: 12px;
+}
+
+.btn-container{
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn{
+  cursor: pointer;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 15px;
+  transition: all ease .3s;
+  display: block;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.btn.btn-normal{
+  border: solid 1px white;
+}
+.btn.btn-success{
+  background-color: rgb(75, 206, 75);
+}
+
+.btn.btn.btn-success:hover{
+  background-color: #000;
+}
+
+.btn.btn-normal:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (min-width: 700px){
+  .btn-container{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btn{
+    flex-shrink: 0;
+    max-width: 300px;
+  }
 }
